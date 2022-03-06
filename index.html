@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking BoxIcon for Icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header><i class="bx bx-left-arrow-alt"></i>Weather</header>
+      <img src="icons/spinner.gif" alt="spinner load" class="spinner" />
+      <section class="input-part">
+        <p class="info-txt"></p>
+        <div class="content">
+          <input
+            type="text"
+            spellcheck="false"
+            placeholder="Name of the city"
+            required
+          />
+          <div class="separator"></div>
+          <button>Get Your Location</button>
+        </div>
+      </section>
+      <div><button class="btn__exit">&#120;</button></div>
+      <section class="weather-part"></section>
+    </div>
+  </body>
+</html>
